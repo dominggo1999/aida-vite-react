@@ -9,6 +9,7 @@ module.exports = {
         'gray-3': '#484848',
         'gray-2': '#9A9A9A',
         'gray-1': '#F3F3F3',
+        'soft-gray': '#EAECEE',
       },
       fontFamily: {
         'sans-pro': ['Source Sans Pro', 'sans-serif'],

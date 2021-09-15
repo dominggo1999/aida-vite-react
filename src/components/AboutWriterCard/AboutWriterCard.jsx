@@ -1,7 +1,7 @@
 import { AiFillLinkedin, AiOutlineInstagram, AiOutlineTwitter } from 'react-icons/ai';
 import React from 'react';
 import {
-  CardWrapper, ImageWrapper, CardTitle, CardName, CardDescription, SocialLinks,
+  CardWrapper, ImageWrapper, CardName, CardDescription, SocialLinks,
 } from './AboutWriterCard.style';
 import { AidaImage } from '../Wrapper/AidaImage';
 
@@ -10,7 +10,6 @@ const authorImage = 'https://images.pexels.com/photos/774909/pexels-photo-774909
 const AboutWriterCard = () => {
   return (
     <CardWrapper>
-      <CardTitle>About Me</CardTitle>
       <ImageWrapper>
         <AidaImage>
           <img

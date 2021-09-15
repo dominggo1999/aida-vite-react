@@ -9,14 +9,6 @@ export const CardWrapper = styled.div`
   `}
 `;
 
-export const CardTitle = styled.p`
-  ${tw`
-    mb-5
-    text-lg
-    font-poppins 
-  `}
-`;
-
 export const ImageWrapper = styled.div`
   ${tw`
     relative

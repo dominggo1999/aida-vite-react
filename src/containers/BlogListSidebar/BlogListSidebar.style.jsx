@@ -16,4 +16,8 @@ export const CategoriesWrapper = styled.div`
     flex-wrap
     justify-between
   `}
+
+  a{
+    width: 48%;
+  }
 `;

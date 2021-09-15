@@ -6,9 +6,9 @@ export const CardWrapper = styled.div`
     rounded-3xl 
     mb-5
     relative
+    w-full
   `}
 
-  width: 160px;
   height: 160px;
 `;
 

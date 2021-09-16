@@ -1,17 +1,10 @@
-import React, { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Routes from './Routes';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 const App = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    // Scroll to top when detecting route change
-    window.scrollTo(0, 0);
-  }, [location]);
-
   return (
     <>
       <Navbar />

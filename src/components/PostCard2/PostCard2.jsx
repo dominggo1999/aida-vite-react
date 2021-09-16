@@ -7,6 +7,7 @@ import Button from '../Button/Button';
 import { capitalize } from '../../util/capitalize';
 import { categoryColors } from '../../data/categoryColors';
 import { AidaImage } from '../Wrapper/AidaImage';
+import { scrollToTop } from '../../util/scrollToTop';
 
 const PostCard2 = ({ post }) => {
   const {
@@ -26,7 +27,10 @@ const PostCard2 = ({ post }) => {
       </CardImage>
       <CardContent>
         <Button bg={bg}>{capitalize(category)}</Button>
-        <Link to="/blog">
+        <Link
+          onClick={scrollToTop}
+          to="/blog"
+        >
           <CardTitle>{title}</CardTitle>
         </Link>
         <CardDate>September 11, 2021</CardDate>

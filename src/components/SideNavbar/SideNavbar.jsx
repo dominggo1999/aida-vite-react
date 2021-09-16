@@ -4,6 +4,7 @@ import React from 'react';
 import { SideNavbarWrapper, NavItem, CloseButton } from './SideNavbar.style';
 import navlinks from '../../constants/navlinks';
 import Button from '../Button/Button';
+import { scrollToTop } from '../../util/scrollToTop';
 
 const SideNavbar = ({ open, handleClose }) => {
   return (
@@ -16,6 +17,7 @@ const SideNavbar = ({ open, handleClose }) => {
           <Link
             key={item.id}
             to={item.path}
+            onClick={scrollToTop}
           >
             <NavItem onClick={handleClose}>{item.name}</NavItem>
           </Link>

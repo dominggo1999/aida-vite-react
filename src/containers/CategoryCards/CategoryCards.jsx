@@ -8,6 +8,7 @@ import { categories } from '../../data/categories';
 import Container from '../../components/Wrapper/Container';
 import { CategoryCardsWrapper, CardsCarousel } from './CategoryCards.style';
 import { breakpoints } from '../../constants/tailwindBreakpoint';
+import { scrollToTop } from '../../util/scrollToTop';
 
 // Install swiper plugin
 // Import Swiper styles
@@ -37,7 +38,10 @@ const CategoryCards = () => {
                     }}
                     key={short.generate()}
                   >
-                    <Link to={`/category/${category.category}`}>
+                    <Link
+                      onClick={scrollToTop}
+                      to={`/category/${category.category}`}
+                    >
                       <CategoryCard
                         category={category}
                       />

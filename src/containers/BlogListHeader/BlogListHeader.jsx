@@ -5,6 +5,7 @@ import {
   BlogListHeaderWrapper, HeaderTitle, NumberOfArticles, HeaderDescription, PageLink,
 } from './BlogListHeader.style';
 import { capitalize } from '../../util/capitalize';
+import { scrollToTop } from '../../util/scrollToTop';
 
 const BlogTopSection = ({ title, num }) => {
   // Fetch blog list information here
@@ -25,7 +26,10 @@ const BlogTopSection = ({ title, num }) => {
           Asperiores non dolor officiis eaque corporis.
         </HeaderDescription>
         <PageLink>
-          <Link to="/">
+          <Link
+            onClick={scrollToTop}
+            to="/"
+          >
             Home
           </Link>
           &nbsp;&gt;

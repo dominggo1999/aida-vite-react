@@ -10,6 +10,7 @@ import {
 } from './Navlink.style';
 import navlinks from '../../constants/navlinks';
 import Button from '../Button/Button';
+import { scrollToTop } from '../../util/scrollToTop';
 
 const Navlinks = ({ openSideNavbar }) => {
   return (
@@ -32,6 +33,7 @@ const Navlinks = ({ openSideNavbar }) => {
               <Link
                 key={item.id}
                 to={item.path}
+                onClick={scrollToTop}
               >
                 <NavItemLeft>{item.name}</NavItemLeft>
               </Link>

@@ -8,6 +8,7 @@ import Navlinks from '../Navlinks/Navlinks';
 import Backdrop from '../Backdrop/Backdrop';
 import SideNavbar from '../SideNavbar/SideNavbar';
 import { breakpoints } from '../../constants/tailwindBreakpoint';
+import { scrollToTop } from '../../util/scrollToTop';
 
 const Navbar = () => {
   const [showSideNavbar, setShowSideNavbar] = useState(false);
@@ -74,7 +75,10 @@ const Navbar = () => {
       <NavbarWrapper showNavbar={showNavbar}>
         <Container>
           <NavbarFlex>
-            <Link to="/">
+            <Link
+              onClick={scrollToTop}
+              to="/"
+            >
               <NavLogo>
                 aida.
               </NavLogo>

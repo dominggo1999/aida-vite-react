@@ -4,12 +4,16 @@ import {
   CardWrapper, CardImageWrapper, CardOverlay, CardTitle,
 } from './CategoryCard2.style';
 import { AidaImage } from '../Wrapper/AidaImage';
+import { scrollToTop } from '../../util/scrollToTop';
 
 const CategoryCard2 = ({ category }) => {
   const { category: cat, image } = category;
 
   return (
-    <Link to={`category/${cat}`}>
+    <Link
+      onClick={scrollToTop}
+      to={`category/${cat}`}
+    >
       <CardWrapper>
         <CardTitle>
           {cat}

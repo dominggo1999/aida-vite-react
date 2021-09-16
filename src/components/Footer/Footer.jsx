@@ -12,6 +12,7 @@ import { categoryColors } from '../../data/categoryColors';
 import Button from '../Button/Button';
 import { categories } from '../../data/categories';
 import SubscribeNewsletter from '../SubscribeNewsletter/SubscribeNewsletter';
+import { scrollToTop } from '../../util/scrollToTop';
 
 const Footer = () => {
   const { brand1, gray } = categoryColors;
@@ -59,12 +60,36 @@ const Footer = () => {
                 <ContentTitle>
                   <FooterTextBold>Quick Link</FooterTextBold>
                 </ContentTitle>
-                <Link to="/about"><FooterLink>About me</FooterLink></Link>
-                <Link to="/"><FooterLink>Help & Support</FooterLink></Link>
-                <Link to="/"><FooterLink>Licensing Policy</FooterLink></Link>
-                <Link to="/"><FooterLink>Refund Policy</FooterLink></Link>
-                <Link to="/contact"><FooterLink>Hire me</FooterLink></Link>
-                <Link to="/contact"><FooterLink>Contact</FooterLink></Link>
+                <Link
+                  onClick={scrollToTop}
+                  to="/about"
+                ><FooterLink>About me</FooterLink>
+                </Link>
+                <Link
+                  onClick={scrollToTop}
+                  to="/"
+                ><FooterLink>Help & Support</FooterLink>
+                </Link>
+                <Link
+                  onClick={scrollToTop}
+                  to="/"
+                ><FooterLink>Licensing Policy</FooterLink>
+                </Link>
+                <Link
+                  onClick={scrollToTop}
+                  to="/"
+                ><FooterLink>Refund Policy</FooterLink>
+                </Link>
+                <Link
+                  onClick={scrollToTop}
+                  to="/contact"
+                ><FooterLink>Hire me</FooterLink>
+                </Link>
+                <Link
+                  onClick={scrollToTop}
+                  to="/contact"
+                ><FooterLink>Contact</FooterLink>
+                </Link>
               </FooterCol>
 
               <FooterCol perFour>

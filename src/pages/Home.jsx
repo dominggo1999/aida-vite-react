@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import MainBanner from '../containers/MainBanner/MainBanner';
 import CategoryCards from '../containers/CategoryCards/CategoryCards';
 import Welcome from '../components/Welcome/Welcome';

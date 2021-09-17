@@ -8,6 +8,7 @@ import { categories } from '../../data/categories';
 import Posts from '../../components/Posts/Posts';
 import { popularPosts } from '../../data/popularPosts';
 import PostCard3 from '../../components/PostCard3/PostCard3';
+import VerticalBanner from '../../components/VerticalBanner/VerticalBanner';
 
 const popularCategories = categories.filter((i, id) => id < 4);
 const posts = popularPosts.filter((i, id) => id < 4);
@@ -43,6 +44,7 @@ const BlogListSidebar = () => {
           })
         }
       </Posts>
+      <VerticalBanner />
     </SidebarWrapper>
   );
 };

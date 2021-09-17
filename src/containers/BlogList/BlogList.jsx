@@ -15,15 +15,15 @@ const BlogList = ({ posts }) => {
         <List>
           <Posts withSidebar>
             {
-            posts && posts.map((post) => {
-              return(
-                <PostCard2
-                  key={short.generate()}
-                  post={post}
-                />
-              );
-            })
-          }
+              posts && posts.map((post) => {
+                return(
+                  <PostCard2
+                    key={short.generate()}
+                    post={post}
+                  />
+                );
+              })
+            }
           </Posts>
           <BlogListSidebar />
         </List>

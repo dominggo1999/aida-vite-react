@@ -44,7 +44,6 @@ const BlogListSidebar = () => {
           })
         }
       </Posts>
-      <VerticalBanner />
     </SidebarWrapper>
   );
 };
